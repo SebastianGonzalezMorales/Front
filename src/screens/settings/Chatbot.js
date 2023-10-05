@@ -41,7 +41,7 @@ const Chatbot = ({ navigation }) => {
 
   const [messages, setMessages] = useState([]);
   const [isTyping, setIsTyping] = useState(false);
-  const API_KEY = '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'; // created a secret API key on platform.openai.com/account
+  const API_KEY = 'API_KEY'; // created a secret API key on platform.openai.com/account
 
   const avatar = { image: 'https://i.ibb.co/Wy4KjGH/robot.png' };
   // const avatar2 = { image: 'https://i.ibb.co/gMbchB4/robot-3558860.png' };
