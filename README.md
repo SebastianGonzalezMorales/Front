@@ -6,6 +6,6 @@ This project utilises the potential of mobile technology to offer assistance to 
 
 The application was designed in Figma and coded in React Native. The main screens are as follows:
 
-<img width="441" alt="Screenshot 2023-10-05 at 21 04 41" src="https://github.com/CorruptX7/Mental-Health-Management-App/assets/38814527/b365a9e3-b522-46a3-a85c-095de843c06c">
+<img width="441" alt="Screenshot 2023-10-05 at 21 04 41" width="500" src="https://github.com/CorruptX7/Mental-Health-Management-App/assets/38814527/b365a9e3-b522-46a3-a85c-095de843c06c">
 
 
