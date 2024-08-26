@@ -100,7 +100,7 @@ const Mood = ({ navigation }) => {
   // delete document function
   const deleteItem = () => {
     if (selectedId) {
-      userRef.collection('mood').doc(selectedId).delete();
+      
       console.log('Document', selectedId, 'has been deleted');
       setModalVisible(false);
     } else {

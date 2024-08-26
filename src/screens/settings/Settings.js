@@ -105,18 +105,18 @@ function Settings({ navigation }) {
         </View>
         <ScrollView>
           <View style={{ marginTop: 10 }}>
-            <SettingsButton
-              text="WeBot"
-              onPress={() => navigation.navigate('Chatbot')}
-            />
+           {/*  <SettingsButton
+              text="WeBt"
+              onPress={() => navigation.navigate('Counselling')}
+            /> */}
             <SettingsButton
               text="Counselling information"
               onPress={() => navigation.navigate('Counselling')}
             />
-            <SettingsButton text="Notifications" onPress={openAppPrefs} />
-            {/* <SettingsButton
+            {/* <SettingsButton text="Notifications" onPress={() => navigation.navigate('Counselling')} /> */}
+           {/*  <SettingsButton
               text="Privacy policy"
-              // onPress={() => navigation.navigate('Notification')}
+               onPress={() => navigation.navigate('Notification')}
             /> */}
             <CustomButton
               buttonStyle={{

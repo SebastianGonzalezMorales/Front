@@ -20,10 +20,9 @@ import MoodStats from './src/screens/mood/MoodStats';
 import MoodHistory from './src/screens/mood/MoodHistory';
 
 import Medication from './src/screens/medication/Medication';
-import TrackMedication from './src/screens/medication/TrackMedication';
-import Track from './src/screens/medication/Track';
+
 import UpdateMedication from './src/screens/medication/UpdateMedication';
-import Notification from './src/screens/utils/Notification';
+
 import MedicationHistory from './src/screens/medication/MedicationHistory';
 
 import Questionnaire from './src/screens/questionnaire/Questionnaire';
@@ -34,7 +33,7 @@ import QuestionnaireHistory from './src/screens/questionnaire/QuestionnaireHisto
 
 import Settings from './src/screens/settings/Settings';
 import EditProfile from './src/screens/settings/EditProfile';
-import Chatbot from './src/screens/settings/Chatbot';
+
 import Counselling from './src/screens/settings/Counselling';
 
 // Firebase
@@ -171,11 +170,7 @@ function App() {
         ) : (
           <Stack.Screen name="Onboarding" component={Onboarding} />
         )} */}
-        {!viewedOnboarding ? (
-          <Stack.Screen
-            name="Onboarding"
-            component={Onboarding}
-            options={{ gestureEnabled: false }}
+        {!viewedOnboarding ? ( <Stack.Screen name="Onboarding" component={Onboarding} options={{ gestureEnabled: false }}
           />
         ) : (
           <></>
@@ -199,20 +194,9 @@ function App() {
             animation: 'slide_from_bottom',
           }}
         />
-        {/* medication */}
-        <Stack.Screen name="TrackMedication" component={TrackMedication} />
-        <Stack.Screen name="Track" component={Track} />
-        <Stack.Screen name="UpdateMedication" component={UpdateMedication} />
-        <Stack.Screen name="Notification" component={Notification} />
-        <Stack.Screen
-          name="MedicationHistory"
-          component={MedicationHistory}
-          options={{
-            presentation: 'modal',
-            animationTypeForReplace: 'push',
-            animation: 'slide_from_bottom',
-          }}
-        />
+
+
+        
         {/* questionnaire */}
         <Stack.Screen name="Test" component={Test} />
         <Stack.Screen
@@ -231,7 +215,6 @@ function App() {
         />
         {/* settings */}
         <Stack.Screen name="EditProfile" component={EditProfile} />
-        <Stack.Screen name="Chatbot" component={Chatbot} />
         <Stack.Screen name="Counselling" component={Counselling} />
         <Stack.Screen name="Home" component={Home} />
       </Stack.Navigator>
